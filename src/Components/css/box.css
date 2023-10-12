@@ -1,0 +1,72 @@
+section .courseCont .boxes .box{
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    width: 90%;
+    height: 30rem;
+    padding: 1rem 2rem;
+    background: #f1f1f1;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border-radius: 5px;
+}
+section .courseCont .boxes .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+section .courseCont .carousel .boxes .box .langname{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    color: rgb(48, 28, 119);
+    font-size: 1.5rem;
+}
+section .courseCont .boxes .box .aboutlang{
+    display: flex;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* border: 2px solid red; */
+}
+section .courseCont .boxes .box #startbtn{
+    height: 1.8rem;
+    width: 8rem;
+    display: grid;
+    place-items: center;
+    font-size: 1rem;
+    letter-spacing: 1.2px;
+    background: rgba(43, 11, 158, 0.842);
+    color: white;
+    position: absolute;
+    bottom: 5%;
+}
+section .courseCont .boxes .box #startbtn a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+section .courseCont .boxes .box #startbtn a:hover .bodbot{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    animation: motion 0.5s ease-in-out 1;
+    background-color: white;
+}
+@keyframes motion{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
