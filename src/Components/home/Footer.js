@@ -4,7 +4,7 @@ import insta from '../images/instagram.png';
 import linkedin from '../images/linkedin.png';
 import twitter from '../images/x.png';
 import github from '../images/github.png';
-import '../css/footer.css'
+import '../css/footer.css';
 
 export default function Footer() {
   return (

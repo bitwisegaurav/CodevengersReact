@@ -2,6 +2,12 @@ import React from 'react';
 import '../css/navbar.css';
 import logo from '../images/logo.png'
 
+function Link(props){
+    return(
+        <a href={props.link}>{props.name}</a>
+    )
+}
+
 export default function Navbar(props) {
   return (
     <nav>
@@ -23,11 +29,11 @@ export default function Navbar(props) {
                 <li className="languages">
                     <p className="courses">Courses ↓</p>
                     <div className="options">
-                        <a href="mysql.html">MySQL</a>
-                        <a href="plsql.html">PL/SQL</a>
-                        <a href="java.html">Java</a>
-                        <a href="javaPrograms.html">Java Programs</a>
-                        <a href="php.html">Php</a>
+                    {links.map((item, index) =>
+                        props.course === item.name ? null : (
+                            <Link key={index} link={item.link} name={item.name} />
+                        )
+                    )}
                     </div>
                 </li> : ""
             }
@@ -39,3 +45,26 @@ export default function Navbar(props) {
 Navbar.defaultProps = {
     courses: true
 };
+
+let links = [
+    {
+        name: "MySQL",
+        link: "mysql.html"
+    },
+    {
+        name: "PL/SQL",
+        link: "plsql.html"
+    },
+    {
+        name: "Java",
+        link: "java.html"
+    },
+    {
+        name: "Java Programs",
+        link: "javaPrograms.html"
+    },
+    {
+        name: "Php",
+        link: "php.html"
+    }
+];

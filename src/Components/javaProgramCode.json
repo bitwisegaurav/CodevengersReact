@@ -1,0 +1,6 @@
+[
+    {
+        "no": 1,
+        "code": "class one{\npublic static void main(String args[])\n{\nSystem.out.println(\"Hello World!\");\n}\n}"
+    }
+]

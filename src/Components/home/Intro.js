@@ -4,7 +4,7 @@ import image from '../images/Programming-amico.svg';
 
 export default function Intro() {
   return (
-    <main>
+    <main id='intro-main'>
       <div className="container">
         <div id="image">
           <img src={image} alt="Intro"/>

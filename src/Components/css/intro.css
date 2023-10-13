@@ -1,4 +1,4 @@
-main{
+#intro-main{
     width: 100%;
     height: calc(100vh - 5rem);
     display: flex;
